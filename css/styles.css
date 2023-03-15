@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* navegador*/
+.navegador{
+    background-color: blue;
+}
+.navegador ul{
+    list-style: none;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.navegador ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: 'Oswald', sans-serif;
+}
+/* fin navegador*/
+/*portada*/
+.portada{
+    position: relative;
+}
+.portada img{
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+}
+
+.portada h1{
+    position: absolute;
+    top: 180px;
+    left: 40%;
+    color: blueviolet;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+}
+/*fin protada*/
+/*contenido*/
+.contenido h2{
+    margin: 10px;
+    font-size: 36px;
+}
+.contenido .tarjeta{
+    width: 400px;
+}
+.contenido .tarjeta img{
+    width: 100%;
+}
+.contenido2 h2{
+    margin: 10px;
+    font-size: 36px;
+}
+.contenido2 .cajas ul li p{
+    width: 200px;
+    height: 100px;
+    background-color: bisque;
+    padding: 15px;
+    margin: 10px;
+}
+.contenido3 h3{
+    margin: 10px;
+    font-size: 36px;
+}
+.contenido3 button{
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+/*fin contenido*/
+/*pie*/
+.pie{
+    background-color: blue;
+    width: 100%;
+    height: 300px;
+}
+.pie label{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+.redes ul li a img{
+    width: 50px;
+    height: 50px;
+}
+/*fin pie*/

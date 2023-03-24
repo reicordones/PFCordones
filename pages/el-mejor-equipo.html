@@ -5,25 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Mejor Equipo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
-        <nav class="navegador">
-            <div>
-                <img class="logo" src="../multimedia/img/logo estetoscopio.png" alt="logo">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicio</a></li>
-                    <li><a href="./el-mejor-equipo.html">El mejor Equipo</a></li>
-                    <li><a href="./unete-al-equipo.html">Únete al Equipo</a></li>
-                    <li><a href="./contactos.html">Contactos</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../multimedia/img/logo-doc-en-casa.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./el-mejor-equipo.html">El mejor equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./unete-al-equipo.html">Únete al equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contactos.html">Contactos</a>
+                  </li>
                 </ul>
+              </div>
             </div>
         </nav>
-        <div class="portada">
-            <img src="../multimedia/img/equipo-medicos.jpg" alt="doctor">
-            <h1>El mejor equipo</h1>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../multimedia/img/carousel/manos-medico-paciente.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Estamos para servirte</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/img/carousel/equipo-medico.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>El mejor personal médico a tu disposición</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/img/carousel/doctora-en-puerta.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Te atendemos en tu hogar</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/img/carousel/toma-de-presion.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Desde emergencias hasta cuidados paliativa</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="../multimedia/img/carousel/muestra-laboratorio.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Pruebas de laboratorio</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
     </header>
     <main>
@@ -83,18 +145,21 @@
 
         </aside>
     </main>
-    <footer>
-        <div class="pie">
-            <label for="">Lorem ipsum dolor sit amet.</label>
-            <div class="redes">
-                <label for="">síguenos</label>
-                <ul>
-                    <li><a href="https://www.facebook.com/"><img src="../multimedia/img/facebook.jpg" alt="facebook"></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="../multimedia/img/instagram.png" alt="instagram"></a></li>
-                    <li><a href="https://web.whatsapp.com"><img src="../multimedia/img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="whatsapp"></a></li>
-                </ul>
-            </div>
+    <footer class="pie d-flex row flex-wrap align-items-center m-0">
+        <div class="col-12 col-sm-6">
+          <h2>Doctor en Casa</h2>
+          <p>Atención médica en tu hogar</p>
+          <p>©2023, Doctor en Casa. Todos los derechos reservados</p>
         </div>
-    </footer>
+        <div class="redes d-flex flex-column col-12 col-sm-6 align-items-center justify-content-end p-3">
+          <p>siguenos</p>
+          <div>
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://web.whatsapp.com"><i class="fa-brands fa-square-whatsapp"></i></a>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body class="container-fluid">
+<body class="container-fluid p-0">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
             <div class="container-fluid">
@@ -89,40 +89,44 @@
         </div>
     </header>
     <main>
-        <div>
+      <h1 class="titulo">Contactos</h1>
+        <section class="contactos">
             <h2>Nuestros canales de atención</h2>
-            <div>
-                <img src="../multimedia/img/pngtree-whatsapp-mobile-software-icon-png-image_6315991.png" alt="whatsapp">
-                <label for="">+000 0000000</label>
-                <label for="">+000 0000000</label>
-                <label for="">Escribenos</label>
+            <form class="formulario" action="">
+                <h2>Queremos llamarte</h2>
+                <label>
+                  Nombre y Apellido<input type="text" name="nomApell" placeholder="Nombre y Apellido" required>
+                </label>
+                <label>
+                Teléfono<input type="tel" name="telefono" placeholder="Teléfono" required>
+                </label>
+                <label>
+                Correo Electrónico<input type="email" name="email" placeholder="Correo Electrónico">
+                </label>
+                <label>
+                  Síntomas<select name="Sintomas">
+                      <option value="none"></option>
+                      <option value="fisico">necesito atención de un médico</option>
+                      <option value="enfermero">necesito cuidado en casa</option>
+                      <option value="terapia">necesito fisioterapia</option>
+                      <option value="psicología">necesito ayuda psicológica</option>
+                      <option value="psicología">requiero realizarme examenes de laboratorio</option>
+                  </select>
+                </label>
+                <label>
+                  Mensaje: <textarea name="mensaje"></textarea>
+                </label>
+                <button type="submit">Te Llamamos</button>
+            </form>
+            <div class="contenedor-wa d-flex justify-content-evenly align-items-center m-2 p-4">
+              <a class="whatsapp p-2" href="https://web.whatsapp.com"><i class="fa-brands fa-square-whatsapp"></i></a>
+              <div>
+                <p>+000 0000000</p>
+                <p>+000 0000000</p>
+                <p>Escribenos</p>
+              </div>
             </div>
-            <div>
-                <img src="../multimedia/img/icono-telefono.png" alt="llamadas">
-                <form action="">
-                    <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido" >
-                    <input type="tel" name="telefono" placeholder="Teléfono">
-                    <input type="email" name="email" placeholder="Correo Electrónico">
-                    <select name="Sintomas">
-                        <option value="fisico">necesito atención de un médico</option>
-                        <option value="enfermero">necesito cuidado en casa</option>
-                        <option value="terapia">necesito fisioterapia</option>
-                        <option value="psicología">necesito ayuda psicológica</option>
-                    </select>
-                    <input type="submit" value="Queremos Llamarte">
-                </form>
-            </div>
-        </div>
-        <div>
-            <h2>Nuestras redes sociales</h2>
-            <div>
-                <label for="">síguenos</label>
-                <ul>
-                    <li><a href="https://www.facebook.com/"><img src="../multimedia/img/facebook.jpg" alt="facebook"></a></li>
-                    <li><a href="https://www.instagram.com/"><img src="../multimedia/img/instagram.png" alt="instagram"></a></li>
-                </ul>
-            </div>
-        </div>
+        </section>
         <aside>
 
         </aside>

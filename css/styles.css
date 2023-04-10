@@ -13,7 +13,7 @@
 }
 
 /* fin navegador*/
-.main{
+.contenidoPrincipal{
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -30,12 +30,14 @@
 }
 .contenido h2{
     margin-top: 48px;
+    text-align: center;
 }
 .contenido .tarjeta p{
     font-size: 24px;
 }
 .contenido2 h2{
     margin-top: 48px;
+    text-align: center;
 }
 .contenido3 h3{
     margin-top: 48px;
@@ -65,8 +67,10 @@
 }
 /*fin pie*/
 /*pagina servicios con flexbox*/
-.serv-contenido h2{
+.serv-contenido h2, .serv-contenido2 h2{
     padding: 10px;
+    margin-top: 48px;
+    text-align: center;
 }
 .tarjeta{
     display: flex;
@@ -103,7 +107,7 @@
 .preconsulta{
     display: flex;
     flex-wrap: wrap;
-    margin: 10px;
+    margin-top: 48px;
     padding: 40px 10px;
     justify-content: space-evenly;
 }
@@ -116,6 +120,9 @@
     }
     .serv-contenido .tarjeta p{
         margin: 0;
+        width: 100%;
+    }
+    .caja div img{
         width: 100%;
     }
     .preconsulta{
@@ -131,13 +138,33 @@
     color: white;
     }
     /*fin pagina servicios*/
+.medicos, .terapia{
+    justify-content: space-evenly;
+}
+.medicos div, .terapia div{
+    max-width: 400px;
+}
+.medicos div h3, .terapia div h3{
+    font-size: 20px;
+}
 .especialidades ul{
     list-style: none;
     }
+.terapia div p{
+    text-align: justify;
+}
+.contenido3 h2{
+    margin-top: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contenido3 div{
+    margin: 0 auto;
+}
     .trabajo{
         max-width: 800px;
         background-color: #36F589;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 20px;
         border-radius: 10px;
         display: grid;

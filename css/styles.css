@@ -13,6 +13,10 @@
 }
 
 /* fin navegador*/
+.main{
+    max-width: 1500px;
+    margin: 0 auto;
+}
 /*contenido*/
 .titulo{
     color: #29D5E1;
@@ -24,8 +28,17 @@
 .equipo img{
     padding: 10px;
 }
+.contenido h2{
+    margin-top: 48px;
+}
 .contenido .tarjeta p{
     font-size: 24px;
+}
+.contenido2 h2{
+    margin-top: 48px;
+}
+.contenido3 h3{
+    margin-top: 48px;
 }
 .contenido3 button{
     width: 200px;
@@ -122,6 +135,11 @@
     list-style: none;
     }
     .trabajo{
+        max-width: 800px;
+        background-color: #36F589;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "trabajo  trabajo"
@@ -133,6 +151,20 @@
     }
     .trabajo h2{
         grid-area: trabajo;
+        color: white;
+        margin: 0 auto;
+    }
+    .trabajo label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+    }
+    .trabajo label input, .trabajo label textarea{
+        background-color:#36F589;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
     }
     .trabajo label:nth-child(2){
         grid-area: nombre;
@@ -155,6 +187,17 @@
     .trabajo label:nth-child(8){
         grid-area: boton;
     }
+    .trabajo p{
+        color: white;
+        padding: 10px;
+    }
+    .trabajo button{
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      padding: 10px;
+      font-size: 20px;
+    }
     .contactos h2{
         padding: 20px;
     }
@@ -172,8 +215,9 @@
     }
     /*formulario de contactos*/
     .formulario{
-        width: 100%;
+        max-width: 800px;
         background-color: #29D5E1;
+        margin: 0 auto;
         padding: 20px;
         border-radius: 10px;
         display: grid;

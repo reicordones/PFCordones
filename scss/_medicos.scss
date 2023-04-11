@@ -1,15 +1,15 @@
 .medicos, .terapia{
     justify-content: space-evenly;
-}
-.medicos div, .terapia div{
-    max-width: 400px;
-}
-.medicos div h3, .terapia div h3{
-    font-size: 20px;
+    div{
+        max-width: 400px;
+        h3{
+            font-size: 20px;
+        }
+        p{
+            text-align: justify;
+        }
+    }
 }
 .especialidades ul{
     list-style: none;
-    }
-.terapia div p{
-    text-align: justify;
 }

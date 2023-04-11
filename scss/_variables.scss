@@ -1,1 +1,14 @@
 $bg-color:#36F589;
+%btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #29D5E1;
+    color: white;
+}
+@mixin format($size,$margin,$align){
+    font-size: $size;
+    margin-top: $margin;
+    text-align: $align;
+}

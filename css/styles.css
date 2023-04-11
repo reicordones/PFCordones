@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+.preconsulta button, .contenido3 button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #29D5E1;
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,38 +38,42 @@
 }
 
 .contenido h2 {
+  font-size: 36px;
   margin-top: 48px;
   text-align: center;
 }
-
 .contenido .tarjeta p {
   font-size: 24px;
 }
 
 .contenido2 h2 {
+  font-size: 36px;
   margin-top: 48px;
   text-align: center;
 }
+.contenido2 div article {
+  max-width: 300px;
+  align-content: start;
+}
+
+.circulo {
+  width: 300px;
+  transition: 0.5s;
+}
 
 .contenido3 h2 {
+  font-size: 36px;
   margin-top: 48px;
-  margin-bottom: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .contenido3 div {
   margin: 0 auto;
 }
-
 .contenido3 h3 {
+  font-size: 36px;
   margin-top: 48px;
-}
-
-.contenido3 button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  background-color: #29D5E1;
+  text-align: center;
 }
 .contenido3 button a {
   color: white;
@@ -114,15 +127,6 @@
   padding: 40px 10px;
   justify-content: space-evenly;
 }
-.preconsulta button {
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  background-color: #29D5E1;
-  color: white;
-}
-
 @media (max-width: 576px) {
   .titulo {
     font-size: 48px;
@@ -147,21 +151,18 @@
 .medicos, .terapia {
   justify-content: space-evenly;
 }
-
 .medicos div, .terapia div {
   max-width: 400px;
 }
-
 .medicos div h3, .terapia div h3 {
   font-size: 20px;
+}
+.medicos div p, .terapia div p {
+  text-align: justify;
 }
 
 .especialidades ul {
   list-style: none;
-}
-
-.terapia div p {
-  text-align: justify;
 }
 
 .trabajo {
@@ -330,6 +331,10 @@
   color: white;
   font-size: 48px;
   padding: 8px;
+}
+
+.circulo:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=styles.css.map */

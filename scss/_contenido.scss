@@ -12,38 +12,47 @@
 .equipo img{
     padding: 10px;
 }
-.contenido h2{
-    margin-top: 48px;
-    text-align: center;
+.contenido{ 
+    h2{
+        @include format(36px,48px,center);
+    }
+    .tarjeta{
+        p{
+            font-size: 24px;
+        }
+    }
 }
-.contenido .tarjeta p{
-    font-size: 24px;
+.contenido2{ 
+    h2{
+        @include format(36px,48px,center);
+    }
+    div{
+        article{
+            max-width: 300px;
+            align-content: start;
+        }
+    }
 }
-.contenido2 h2{
-    margin-top: 48px;
-    text-align: center;
+.circulo{
+    width: 300px;
+    transition: 0.5s;
 }
 .contenido3{ 
     h2{
-        margin-top: 48px;
+        @include format(36px,48px,center);
         margin-bottom: 20px;
-        text-align: center;
     }
     div{
         margin: 0 auto;
     }
-}
-.contenido3 h3{
-    margin-top: 48px;
-}
-.contenido3 button{
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 5px;
-    background-color: #29D5E1;
-    a{
-        color: white;
-        text-decoration: none;
+    h3{
+        @include format(36px,48px,center);
+    }
+    button{
+        @extend %btn;
+        a{
+             color: white;
+             text-decoration: none;
+        }
     }
 }

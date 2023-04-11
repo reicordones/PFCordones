@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* navegador*/
+.navbar-brand img{
+    width: 200px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* fin navegador*/
+.contenidoPrincipal{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+/*contenido*/
+.titulo{
+    color: #29D5E1;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.equipo img{
+    padding: 10px;
+}
+.contenido h2{
+    margin-top: 48px;
+    text-align: center;
+}
+.contenido .tarjeta p{
+    font-size: 24px;
+}
+.contenido2 h2{
+    margin-top: 48px;
+    text-align: center;
+}
+.contenido3 h3{
+    margin-top: 48px;
+}
+.contenido3 button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #29D5E1;
+}
+.contenido3 button a{
+    color: white;
+    text-decoration: none;
+}
+/*fin contenido*/
+/*pie*/
+.pie{
+    background-color: #36F589;
+    width: 100%;
+    color: white;
+}
+.pie .redes a i{
+    color: white;
+    font-size: 48px;
+    padding: 8px;
+}
+/*fin pie*/
+/*pagina servicios con flexbox*/
+.serv-contenido h2, .serv-contenido2 h2{
+    padding: 10px;
+    margin-top: 48px;
+    text-align: center;
+}
+.tarjeta{
+    display: flex;
+    margin: 10px;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+}
+.tarjeta p{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    font-size: 24px;
+}
+@media(max-width:992px){
+    .serv-contenido .tarjeta{
+        flex-direction: column;
+    }
+}
+.cajas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.cajas div img{
+    width: 400px;
+    padding: 20px 10px;
+}
+.cajas div p{
+    text-align: center;
+    font-size: 24px;
+}
+.preconsulta{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 48px;
+    padding: 40px 10px;
+    justify-content: space-evenly;
+}
+@media(max-width:576px){
+    .titulo{
+        font-size: 48px;
+    }
+    .serv-contenido .tarjeta iframe{
+        width: 100%;
+    }
+    .serv-contenido .tarjeta p{
+        margin: 0;
+        width: 100%;
+    }
+    .caja div img{
+        width: 100%;
+    }
+    .preconsulta{
+        flex-direction: column;
+    }
+    .contenedor-wa{
+        width: 100%;
+    }
+}
+.preconsulta button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #29D5E1;
+    color: white;
+    }
+    /*fin pagina servicios*/
+.medicos, .terapia{
+    justify-content: space-evenly;
+}
+.medicos div, .terapia div{
+    max-width: 400px;
+}
+.medicos div h3, .terapia div h3{
+    font-size: 20px;
+}
+.especialidades ul{
+    list-style: none;
+    }
+.terapia div p{
+    text-align: justify;
+}
+.contenido3 h2{
+    margin-top: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contenido3 div{
+    margin: 0 auto;
+}
+    .trabajo{
+        max-width: 800px;
+        background-color: #36F589;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "trabajo  trabajo"
+                             "nombre mensaje"
+                             "email  mensaje"
+                             "region mensaje"
+                             "telefono mensaje"
+                             "parrafo  boton";
+    }
+    .trabajo h2{
+        grid-area: trabajo;
+        color: white;
+        margin: 0 auto;
+    }
+    .trabajo label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+    }
+    .trabajo label input, .trabajo label textarea{
+        background-color:#36F589;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+    .trabajo label:nth-child(2){
+        grid-area: nombre;
+    }
+    .trabajo label:nth-child(3){
+        grid-area: email;
+    }
+    .trabajo label:nth-child(4){
+        grid-area: region;
+    }
+    .trabajo label:nth-child(5){
+        grid-area: telefono;
+    }
+    .trabajo label:nth-child(6){
+        grid-area: mensaje;
+    }
+    .trabajo label:nth-child(7){
+        grid-area: parrafo;
+    }
+    .trabajo label:nth-child(8){
+        grid-area: boton;
+    }
+    .trabajo p{
+        color: white;
+        padding: 10px;
+    }
+    .trabajo button{
+      border: none;
+      border-radius: 5px;
+      background-color: white;
+      padding: 10px;
+      font-size: 20px;
+    }
+    .contactos h2{
+        margin-top: 48px;
+        text-align: center;
+    }
+    .contenedor-wa{
+        width: 400px;
+        background-color:#29D5E1;
+        padding: 20px;
+        margin: 10px;
+        color: white;
+        border-radius: 10px;
+    }
+    .contenedor-wa a{
+        font-size: 80px;
+        color: white;
+        text-align: center;
+    }  
+    .contenedor-wa div p{
+        margin: 0;
+    }
+    /*formulario de contactos*/
+    .formulario{
+        max-width: 800px;
+        background-color: #29D5E1;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "contacto  contacto"
+                             "nombre     telefono"
+                             "email      sintomas"
+                             "mensaje     mensaje"
+                             "boton        boton";  
+    }
+    .formulario h3{
+        grid-area: contacto;
+        color: white;
+        padding: 10px;
+    }
+    .formulario label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+    }
+    .formulario label input, .formulario label textarea{
+        background-color:#29D5E1;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+    .formulario label select{
+        background-color: #29D5E1;
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+    .formulario label:nth-child(2){
+        grid-area: nombre;
+    }
+    .formulario label:nth-child(3){
+        grid-area: telefono;
+    }.formulario label:nth-child(4){
+        grid-area: email;
+    }
+    .formulario label:nth-child(5){
+        grid-area: sintomas;
+    }
+    .formulario label:nth-child(6){
+        grid-area: mensaje;
+    }
+    .formulario button{
+        grid-area: boton;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 20px;
+    }
+    @media(max-width:768px){
+        .formulario{
+            border-radius: none;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "contacto  contacto"
+                                "nombre     nombre"
+                                "telefono  telefono"
+                                "email      email"
+                                "sintomas sintomas"
+                                "mensaje     mensaje"
+                                "boton        boton";  
+        }
+    }

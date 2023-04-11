@@ -1,0 +1,64 @@
+.trabajo{
+    max-width: 800px;
+    background-color: $bg-color;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "trabajo  trabajo"
+                            "nombre mensaje"
+                            "email  mensaje"
+                            "region mensaje"
+                            "telefono mensaje"
+                            "parrafo  boton";
+    h2{
+        grid-area: trabajo;
+        color: white;
+        margin: 0 auto;
+    } 
+    label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        input, textarea{
+            background-color: $bg-color;
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
+    }
+    p{
+        color: white;
+        padding: 10px;
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
+}      
+    .trabajo label:nth-child(2){
+        grid-area: nombre;
+    }
+    .trabajo label:nth-child(3){
+        grid-area: email;
+    }
+    .trabajo label:nth-child(4){
+        grid-area: region;
+    }
+    .trabajo label:nth-child(5){
+        grid-area: telefono;
+    }
+    .trabajo label:nth-child(6){
+        grid-area: mensaje;
+    }
+    .trabajo label:nth-child(7){
+        grid-area: parrafo;
+    }
+    .trabajo label:nth-child(8){
+        grid-area: boton;
+    }

@@ -1,0 +1,71 @@
+.formulario{
+    max-width: 800px;
+    background-color: #29D5E1;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "contacto  contacto"
+                            "nombre     telefono"
+                            "email      sintomas"
+                            "mensaje     mensaje"
+                            "boton        boton";  
+    h3{
+        grid-area: contacto;
+        color: white;
+        padding: 10px;
+    }
+    label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 10px;
+        input, textarea{
+            background-color:#29D5E1;
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
+        select{
+            background-color: #29D5E1;
+            border: none;
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
+    }
+    button{
+        grid-area: boton;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        font-size: 20px;
+    }
+}
+    .formulario label:nth-child(2){
+        grid-area: nombre;
+    }
+    .formulario label:nth-child(3){
+        grid-area: telefono;
+    }.formulario label:nth-child(4){
+        grid-area: email;
+    }
+    .formulario label:nth-child(5){
+        grid-area: sintomas;
+    }
+    .formulario label:nth-child(6){
+        grid-area: mensaje;
+    }
+    @media(max-width:768px){
+        .formulario{
+            border-radius: none;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "contacto  contacto"
+                                "nombre     nombre"
+                                "telefono  telefono"
+                                "email      email"
+                                "sintomas sintomas"
+                                "mensaje     mensaje"
+                                "boton        boton";  
+        }
+    }

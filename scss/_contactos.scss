@@ -1,20 +1,23 @@
-.contactos h2{
+.contactos{
+    h2{
     margin-top: 48px;
     text-align: center;
-}
-.contenedor-wa{
-    width: 400px;
-    background-color:#29D5E1;
-    padding: 20px;
-    margin: 10px;
-    color: white;
-    border-radius: 10px;
-    a{
-        font-size: 80px;
-        color: white;
-        text-align: center;
     }
-    div p{
-        margin: 0;
+    .contenedor-wa{
+        max-width: 400px;
+        background-color:#29D5E1;
+        padding: 20px;
+        margin-bottom: 20px;
+        color: white;
+        border-radius: 10px;
+        a{
+            font-size: 80px;
+            color: white;
+            text-align: center;
+        }
+        .telefonos{
+            margin: 0,auto;
+            text-align: center;
+        }
     }
 }

@@ -18,8 +18,14 @@
 }
 
 @media(max-width:992px){
-    .serv-contenido .tarjeta{
+    .serv-contenido{
+        .tarjeta{
         flex-direction: column;
+        align-items: center;
+            p{
+                font-size: 20px;
+            }
+        }
     }
 }
 .cajas{

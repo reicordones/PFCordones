@@ -3,9 +3,9 @@
     margin: 0 auto;
 }
 .titulo{
-    color: #29D5E1;
+    color: #3436E0;
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Urbanist', sans-serif;
     font-weight: bold;
     text-align: center;
 }
@@ -21,6 +21,15 @@
             font-size: 24px;
         }
     }
+}
+@media(max-width:768px){
+    .contenido{
+        .tarjeta{
+            p{
+                font-size: 18px;
+            }
+        }
+    }  
 }
 .contenido2{ 
     h2{

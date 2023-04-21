@@ -23,22 +23,25 @@
         color: white;
         padding: 10px;
         input, textarea{
-            background-color: $bg-color;
-            border: none;
+            background-color:white;
+            border-radius: 5px;
             border-bottom: 1px solid white;
             padding: 10px;
         }
     }
     p{
+        grid-area: parrafo;
         color: white;
         padding: 10px;
     }
     button{
+        grid-area: boton;
         border: none;
         border-radius: 5px;
-        background-color: white;
+        background-color:#898bed;
         padding: 10px;
         font-size: 20px;
+        text-align: center;
     }
 }      
     .trabajo label:nth-child(2){
@@ -56,9 +59,22 @@
     .trabajo label:nth-child(6){
         grid-area: mensaje;
     }
-    .trabajo label:nth-child(7){
-        grid-area: parrafo;
+    @media(max-width:768px){
+        .trabajo{
+            margin: 20px, 20px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "trabajo trabajo"
+                                "nombre    nombre"
+                                "email      email"
+                                "region    region"
+                                "telefono telefono"
+                                "mensaje  mensaje"
+                                "parrafo  parrafo"
+                                "boton      boton";
+        }
     }
-    .trabajo label:nth-child(8){
-        grid-area: boton;
+    .comentario{
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Urbanist', sans-serif;
     }

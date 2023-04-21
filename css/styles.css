@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 .preconsulta button, .contenido3 button {
   width: 200px;
   height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: #29D5E1;
+  background-color: #3436E0;
   color: white;
 }
 
@@ -26,9 +26,9 @@
 }
 
 .titulo {
-  color: #29D5E1;
+  color: #3436E0;
   font-size: 60px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-weight: bold;
   text-align: center;
 }
@@ -46,6 +46,11 @@
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .contenido .tarjeta p {
+    font-size: 18px;
+  }
+}
 .contenido2 h2 {
   font-size: 36px;
   margin-top: 48px;
@@ -103,6 +108,10 @@
 @media (max-width: 992px) {
   .serv-contenido .tarjeta {
     flex-direction: column;
+    align-items: center;
+  }
+  .serv-contenido .tarjeta p {
+    font-size: 20px;
   }
 }
 .cajas {
@@ -167,7 +176,7 @@
 
 .trabajo {
   max-width: 800px;
-  background-color: #36F589;
+  background-color: #3436E0;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
@@ -187,21 +196,24 @@
   padding: 10px;
 }
 .trabajo label input, .trabajo label textarea {
-  background-color: #36F589;
-  border: none;
+  background-color: white;
+  border-radius: 5px;
   border-bottom: 1px solid white;
   padding: 10px;
 }
 .trabajo p {
+  grid-area: parrafo;
   color: white;
   padding: 10px;
 }
 .trabajo button {
+  grid-area: boton;
   border: none;
   border-radius: 5px;
-  background-color: white;
+  background-color: #898bed;
   padding: 10px;
   font-size: 20px;
+  text-align: center;
 }
 
 .trabajo label:nth-child(2) {
@@ -224,17 +236,22 @@
   grid-area: mensaje;
 }
 
-.trabajo label:nth-child(7) {
-  grid-area: parrafo;
+@media (max-width: 768px) {
+  .trabajo {
+    margin: 20px, 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "trabajo trabajo" "nombre    nombre" "email      email" "region    region" "telefono telefono" "mensaje  mensaje" "parrafo  parrafo" "boton      boton";
+  }
 }
-
-.trabajo label:nth-child(8) {
-  grid-area: boton;
+.comentario {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Urbanist", sans-serif;
 }
 
 .formulario {
   max-width: 800px;
-  background-color: #29D5E1;
+  background-color: #3436E0;
   margin: 0 auto;
   padding: 20px;
   border-radius: 10px;
@@ -254,13 +271,13 @@
   padding: 10px;
 }
 .formulario label input, .formulario label textarea {
-  background-color: #29D5E1;
+  background-color: #3436E0;
   border: none;
   border-bottom: 1px solid white;
   padding: 10px;
 }
 .formulario label select {
-  background-color: #29D5E1;
+  background-color: #3436E0;
   border: none;
   border-bottom: 1px solid white;
   padding: 10px;
@@ -295,7 +312,6 @@
 
 @media (max-width: 768px) {
   .formulario {
-    border-radius: none;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "contacto  contacto" "nombre     nombre" "telefono  telefono" "email      email" "sintomas sintomas" "mensaje     mensaje" "boton        boton";
   }
@@ -304,26 +320,26 @@
   margin-top: 48px;
   text-align: center;
 }
-
-.contenedor-wa {
-  width: 400px;
+.contactos .contenedor-wa {
+  max-width: 400px;
   background-color: #29D5E1;
   padding: 20px;
-  margin: 10px;
+  margin-bottom: 20px;
   color: white;
   border-radius: 10px;
 }
-.contenedor-wa a {
+.contactos .contenedor-wa a {
   font-size: 80px;
   color: white;
   text-align: center;
 }
-.contenedor-wa div p {
-  margin: 0;
+.contactos .contenedor-wa .telefonos {
+  margin: 0, auto;
+  text-align: center;
 }
 
 .pie {
-  background-color: #36F589;
+  background-color: #3436E0;
   width: 100%;
   color: white;
 }

@@ -67,8 +67,16 @@
             }
         }
     }   
-    .caja div img{
-        width: 100%;
+    .serv-contenido2{
+        .cajas div{
+            padding: 0;
+            img{
+                width: 100%;  
+            }
+            p{
+                width: 100%;
+            }
+        } 
     }
     .preconsulta{
         flex-direction: column;

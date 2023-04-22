@@ -147,7 +147,13 @@
     margin: 0;
     width: 100%;
   }
-  .caja div img {
+  .serv-contenido2 .cajas div {
+    padding: 0;
+  }
+  .serv-contenido2 .cajas div img {
+    width: 100%;
+  }
+  .serv-contenido2 .cajas div p {
     width: 100%;
   }
   .preconsulta {
@@ -168,12 +174,29 @@
 }
 .medicos div p, .terapia div p {
   text-align: justify;
+  font-size: 20px;
 }
 
 .especialidades ul {
   list-style: none;
+  font-size: 20px;
 }
 
+.contenido3 div p {
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .medicos div p, .terapia div p {
+    font-size: 16px;
+  }
+  .especialidades ul {
+    font-size: 16px;
+  }
+  .contenido3 div p {
+    font-size: 18px;
+  }
+}
 .trabajo {
   max-width: 800px;
   background-color: #3436E0;
